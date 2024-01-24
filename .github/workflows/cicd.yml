@@ -40,4 +40,4 @@ jobs:
       - name: Delete old container
         run: docker rm -f tateti-server-container
       - name: Run docker container
-        run: docker run -d -p 433:433 --name tateti-server-container fdreer/tateti-server
+        run: docker run -d -p 443:443 --name tateti-server-container fdreer/tateti-server
