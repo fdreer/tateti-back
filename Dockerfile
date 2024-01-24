@@ -5,5 +5,5 @@ RUN npm ci
 COPY . .
 COPY .env ./
 RUN npm run build
-EXPOSE 8080
+EXPOSE 433
 CMD ["node","dist/main.js"]
