@@ -3,7 +3,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 COPY . .
-COPY .env ./
 RUN npm run build
-EXPOSE 433
+EXPOSE 8080
 CMD ["node","dist/main.js"]
